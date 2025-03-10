@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.chatapp.controller.ChatController"
+      style="-fx-padding: 10;">
+
+    <!-- ListView en lugar de TextArea -->
+    <ListView fx:id="chatListView" prefHeight="350" prefWidth="500"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="messageField" promptText="Escribe tu mensaje..." HBox.hgrow="ALWAYS"/>
+        <Button text="Enviar" onAction="#handleSend"/>
+    </HBox>
+
+</VBox>

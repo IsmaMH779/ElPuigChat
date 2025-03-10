@@ -1,0 +1,77 @@
+VBox {
+    -fx-background-color: #23272a;
+    -fx-padding: 30px;
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+}
+
+ListView {
+    -fx-background-color: #2c2f33;
+    -fx-text-fill: white;
+    -fx-border-color: #888;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+TextField {
+    -fx-background-color: #2c2f33;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-color: #7289da;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+TextField:focused {
+    -fx-border-color: #7289da;
+    -fx-border-width: 2px;
+    -fx-background-color: #2c2f33;
+    -fx-effect: dropshadow(gaussian, #2c2f33, 8, 0, 0, 4);
+}
+
+Button {
+    -fx-background-color: #7289da;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+Button:hover {
+    -fx-background-color: #5b6e9c;
+    -fx-effect: dropshadow(gaussian, rgba(91, 110, 174, 1), 10, 0.5, 0, 0);
+}
+
+ListView {
+    -fx-background-color: #2c2f33;
+    -fx-text-fill: white;
+    -fx-border-color: #7289da;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Estilo de las celdas de la ListView */
+.list-cell {
+    -fx-background-color: #2c2f33;
+    -fx-text-fill: white;
+}
+
+/* Estilo para los elementos pares */
+.list-cell:filled:nth-child(odd) {
+    -fx-background-color: #3e444b;
+}
+
+/* Estilo para los elementos impares */
+.list-cell:filled:nth-child(even) {
+    -fx-background-color: #2c2f33;
+}
+
+/* Contenido principal */
+.image-logo {
+    -fx-alignment: center;
+}
+
+
